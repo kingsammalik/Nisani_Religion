@@ -6,7 +6,6 @@ import android.content.Intent;
 import android.content.ServiceConnection;
 import android.os.IBinder;
 
-import com.samapps.sachinmalik.nisani_religion.player.Audio;
 import com.samapps.sachinmalik.nisani_religion.player.PlayerExceptions.AudioListNullPointerException;
 
 import java.io.Serializable;

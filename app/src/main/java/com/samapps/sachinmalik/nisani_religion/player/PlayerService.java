@@ -10,12 +10,10 @@ import android.os.IBinder;
 import android.support.annotation.Nullable;
 import android.util.Log;
 
-import com.samapps.sachinmalik.nisani_religion.player.Audio;
 import com.samapps.sachinmalik.nisani_religion.player.PlayerExceptions.AudioAssetsInvalidException;
 import com.samapps.sachinmalik.nisani_religion.player.PlayerExceptions.AudioFilePathInvalidException;
 import com.samapps.sachinmalik.nisani_religion.player.PlayerExceptions.AudioRawInvalidException;
 import com.samapps.sachinmalik.nisani_religion.player.PlayerExceptions.AudioUrlInvalidException;
-import com.samapps.sachinmalik.nisani_religion.player.PlayerView;
 
 import java.io.File;
 import java.io.IOException;

@@ -1,19 +1,17 @@
 package com.samapps.sachinmalik.nisani_religion;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
-
 import com.samapps.sachinmalik.nisani_religion.player.Audio;
-import com.samapps.sachinmalik.nisani_religion.player.PlayerService;
 import com.samapps.sachinmalik.nisani_religion.player.PlayerView;
 
 import java.util.ArrayList;
 
-public class PlayerActivity extends AppCompatActivity implements PlayerService.JcPlayerServiceListener{
+public class PlayerActivity extends AppCompatActivity implements PlayerView.JcPlayerViewServiceListener{
 
     String url="http://www.prapatti.com/slokas/mp3/hanumaanchalisaa.mp3";
     PlayerView jcPlayerView;
