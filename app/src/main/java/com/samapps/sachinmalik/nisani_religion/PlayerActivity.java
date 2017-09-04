@@ -6,27 +6,27 @@ import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
-import com.example.jean.jcplayer.JcAudio;
-import com.example.jean.jcplayer.JcAudioPlayer;
-import com.example.jean.jcplayer.JcPlayerService;
-import com.example.jean.jcplayer.JcPlayerView;
+
+import com.samapps.sachinmalik.nisani_religion.player.Audio;
+import com.samapps.sachinmalik.nisani_religion.player.PlayerService;
+import com.samapps.sachinmalik.nisani_religion.player.PlayerView;
 
 import java.util.ArrayList;
 
-public class PlayerActivity extends AppCompatActivity implements JcPlayerService.JcPlayerServiceListener{
+public class PlayerActivity extends AppCompatActivity implements PlayerService.JcPlayerServiceListener{
 
     String url="http://www.prapatti.com/slokas/mp3/hanumaanchalisaa.mp3";
-    JcPlayerView jcPlayerView;
-    ArrayList<JcAudio> jcAudios;
+    PlayerView jcPlayerView;
+    ArrayList<Audio> jcAudios;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_player);
-        jcPlayerView = (JcPlayerView) findViewById(R.id.player);
+        jcPlayerView = (PlayerView) findViewById(R.id.player);
         jcAudios = new ArrayList<>();
-        jcAudios.add(JcAudio.createFromURL("hanuman chalisa",url));
+        jcAudios.add(Audio.createFromURL("hanuman chalisa",url));
         jcPlayerView.initPlaylist(jcAudios);
         ((TextView)findViewById(R.id.shlok)).setOnClickListener(new View.OnClickListener() {
             @Override
