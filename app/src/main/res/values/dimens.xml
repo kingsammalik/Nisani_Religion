@@ -4,4 +4,7 @@
     <dimen name="icon_with">65dp</dimen>
     <dimen name="icon_height">80dp</dimen>
     <dimen name="text_size">10sp</dimen>
+    <dimen name="app_bar_height">180dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="text_margin">16dp</dimen>
 </resources>

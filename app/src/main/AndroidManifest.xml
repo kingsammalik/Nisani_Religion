@@ -3,7 +3,7 @@
     package="com.samapps.sachinmalik.nisani_religion"
     android:installLocation="auto">
 
-    <!--normal permissions-->
+    <!-- normal permissions -->
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -14,15 +14,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-        <service
-            android:name=".player.PlayerService" />
+        <service android:name=".player.PlayerService" />
 
         <receiver
             android:name=".player.PlayerNotificationReceiver"
             android:enabled="true"
             android:exported="false" />
-
 
         <activity android:name=".PlayerActivity">
             <intent-filter>
@@ -35,6 +32,11 @@
         <meta-data
             android:name="io.fabric.ApiKey"
             android:value="330b273786c0074fc10008b5f60011aa6ca7152c" />
+
+        <activity
+            android:name=".ImageDetail"
+            android:label="@string/title_activity_image_detail"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

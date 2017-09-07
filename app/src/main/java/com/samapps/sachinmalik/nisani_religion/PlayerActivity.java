@@ -1,5 +1,6 @@
 package com.samapps.sachinmalik.nisani_religion;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -29,8 +30,9 @@ public class PlayerActivity extends AppCompatActivity implements PlayerView.JcPl
         ((TextView)findViewById(R.id.shlok)).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                jcPlayerView.playAudio(jcPlayerView.getMyPlaylist().get(0));
-                jcPlayerView.createNotification();
+                //jcPlayerView.playAudio(jcPlayerView.getMyPlaylist().get(0));
+                //jcPlayerView.createNotification();
+                startActivity(new Intent(PlayerActivity.this,ImageDetail.class));
             }
         });
     }
