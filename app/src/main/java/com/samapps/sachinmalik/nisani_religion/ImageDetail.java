@@ -28,23 +28,7 @@ public class ImageDetail extends BaseActivity {
         im.setImageResource(R.drawable.image5);
         viewGroup=(ViewGroup)findViewById(R.id.root_view);
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        ((AppBarLayout)findViewById(R.id.app_bar)).addOnOffsetChangedListener(new AppBarLayout.OnOffsetChangedListener() {
-            int scrollRange = -1;
 
-            @Override
-            public void onOffsetChanged(final AppBarLayout appBarLayout, int verticalOffset) {
-                //Initialize the size of the scroll
-                if (scrollRange == -1) {
-                    scrollRange = appBarLayout.getTotalScrollRange();
-                }
-                //Check if the view is collapsed
-                if (scrollRange + verticalOffset == 0) {
-                    toolbar.setBackgroundColor(ContextCompat.getColor(ImageDetail.this, R.color.colorAccent));
-                }else{
-                    //toolbar.setBackgroundColor(ContextCompat.getColor(mContext, R.color.OTHER_COLOR));
-                }
-            }
-        });
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
