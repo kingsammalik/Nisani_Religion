@@ -32,7 +32,7 @@ public class PlayerActivity extends AppCompatActivity implements PlayerView.JcPl
             public void onClick(View view) {
                 //jcPlayerView.playAudio(jcPlayerView.getMyPlaylist().get(0));
                 //jcPlayerView.createNotification();
-                startActivity(new Intent(PlayerActivity.this,ImageDetail.class));
+                startActivity(new Intent(PlayerActivity.this,VideoPlayer.class));
             }
         });
     }

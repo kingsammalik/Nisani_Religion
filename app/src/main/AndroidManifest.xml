@@ -36,7 +36,8 @@
         <activity
             android:name=".ImageDetail"
             android:label="@string/title_activity_image_detail"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".VideoPlayer"></activity>
     </application>
 
 </manifest>
