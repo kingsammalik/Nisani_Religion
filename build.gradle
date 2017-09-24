@@ -6,6 +6,7 @@ buildscript {
         maven {
             url  "http://dl.bintray.com/jeancsanchez/maven"
         }
+
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:2.3.3'
