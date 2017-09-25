@@ -27,7 +27,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     String url="http://www.prapatti.com/slokas/mp3/hanumaanchalisaa.mp3";
     PlayerView playerView;
     ArrayList<Audio> jcAudios;
-
+    private ArrayList<Class> runningActivities = new ArrayList<>();
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,6 +44,17 @@ public abstract class BaseActivity extends AppCompatActivity {
         super.onDestroy();
     }
 
+    public void addThisActivityToRunningActivityies (Class cls) {
+        if (!runningActivities.contains(cls)) runningActivities.add(cls);
+    }
+
+    public void removeThisActivityFromRunningActivities (Class cls) {
+        if (runningActivities.contains(cls)) runningActivities.remove(cls);
+    }
+
+    public boolean isActivityInBackStack (Class cls) {
+        return runningActivities.contains(cls);
+    }
 
     public void playAudio() {
         Log.e(TAG,"on playaudio");
