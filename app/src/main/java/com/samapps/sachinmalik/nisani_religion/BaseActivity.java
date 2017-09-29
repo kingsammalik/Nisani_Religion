@@ -56,10 +56,9 @@ public abstract class BaseActivity extends AppCompatActivity {
         return runningActivities.contains(cls);
     }
 
-    public void playAudio() {
+    public void playAudio(ViewGroup viewGroup) {
         Log.e(TAG,"on playaudio");
-        playerView.playAudio(playerView.getMyPlaylist().get(0));
-        playerView.createNotification();
+
     }
 
     public void addContentView(ViewGroup viewGroup) {
@@ -74,6 +73,8 @@ public abstract class BaseActivity extends AppCompatActivity {
         params.gravity = Gravity.BOTTOM; //we want to be BELOW that line
         playerView.setLayoutParams(params);*/
         viewGroup.addView(playerView);
+        playerView.playAudio(playerView.getMyPlaylist().get(0));
+        //playerView.createNotification();
     }
 
 }

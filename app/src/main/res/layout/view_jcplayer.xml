@@ -25,14 +25,14 @@
       android:scrollHorizontally="true"
       android:textAlignment="center"
       android:textColor="@android:color/black"
-      android:textSize="16sp"
+      android:textSize="12sp"
       />
 
   <LinearLayout
       android:id="@+id/linearLayout"
       android:layout_width="match_parent"
       android:layout_height="wrap_content"
-      android:layout_marginTop="30dp"
+      android:layout_marginTop="15dp"
       android:orientation="horizontal"
       android:paddingEnd="16dp"
       android:paddingStart="16dp"
@@ -77,7 +77,6 @@
       android:layout_below="@+id/linearLayout"
       android:layout_centerHorizontal="true"
       android:layout_gravity="center"
-      android:layout_marginBottom="5dp"
       android:background="@drawable/ic_play_black"
       />
 
@@ -88,7 +87,6 @@
       android:layout_alignParentEnd="true"
       android:layout_alignParentRight="true"
       android:layout_below="@+id/linearLayout"
-      android:layout_marginBottom="5dp"
       android:layout_marginEnd="16dp"
       android:layout_marginRight="16dp"
       android:background="@drawable/ic_next_black"
@@ -112,7 +110,6 @@
       android:layout_alignParentLeft="true"
       android:layout_alignParentStart="true"
       android:layout_below="@+id/linearLayout"
-      android:layout_marginBottom="5dp"
       android:layout_marginLeft="16dp"
       android:layout_marginStart="16dp"
       android:background="@drawable/ic_previous_black"

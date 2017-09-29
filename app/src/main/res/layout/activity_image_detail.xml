@@ -9,57 +9,67 @@
     android:layout_height="match_parent"
     android:layout_width="match_parent"
     tools:context="com.samapps.sachinmalik.nisani_religion.ImageDetail">
-<android.support.design.widget.CoordinatorLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
 
-    >
-
-    <android.support.design.widget.AppBarLayout
-        android:id="@+id/app_bar"
+    <android.support.design.widget.CoordinatorLayout
+        android:id="@+id/cons"
         android:layout_width="match_parent"
-        android:layout_height="@dimen/app_bar_height"
-        app:contentScrim="?attr/colorPrimary"
-        android:fitsSystemWindows="true"
-        android:theme="@style/AppTheme.AppBarOverlay">
+        android:layout_height="match_parent"
 
-        <android.support.design.widget.CollapsingToolbarLayout
-            android:id="@+id/toolbar_layout"
+        >
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/app_bar"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="@dimen/app_bar_height"
             android:fitsSystemWindows="true"
-            app:contentScrim="?attr/colorPrimary"
-            app:layout_scrollFlags="scroll|exitUntilCollapsed">
+            android:theme="@style/AppTheme.AppBarOverlay"
+            app:contentScrim="?attr/colorPrimary">
 
-            <ImageView
-                android:id="@+id/header_logo"
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/toolbar_layout"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:scaleType="center"
-                android:layout_gravity="center"
-                />
+                android:fitsSystemWindows="true"
+                app:contentScrim="?attr/colorPrimary"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed">
 
-            <android.support.v7.widget.Toolbar
-                android:id="@+id/toolbar"
-                android:layout_width="match_parent"
-                android:layout_height="?attr/actionBarSize"/>
+                <ImageView
+                    android:id="@+id/header_logo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:scaleType="center" />
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize" />
 
 
-        </android.support.design.widget.CollapsingToolbarLayout>
-    </android.support.design.widget.AppBarLayout>
+            </android.support.design.widget.CollapsingToolbarLayout>
+        </android.support.design.widget.AppBarLayout>
 
-    <include
-        android:id="@+id/detail_view"
-        layout="@layout/content_image_detail" />
+        <include
+            android:id="@+id/detail_view"
+            layout="@layout/content_image_detail" />
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/fab_margin"
-        app:layout_anchor="@id/app_bar"
-        app:layout_anchorGravity="bottom|end"
-        app:srcCompat="@android:drawable/ic_media_play" />
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/fab_margin"
+            app:layout_anchor="@id/app_bar"
+            app:layout_anchorGravity="bottom|end"
+            app:srcCompat="@android:drawable/ic_media_play" />
 
-</android.support.design.widget.CoordinatorLayout>
+        <com.samapps.sachinmalik.nisani_religion.player.PlayerView
+            android:id="@+id/player"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"/>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+
 </LinearLayout>
